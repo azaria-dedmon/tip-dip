@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip-calc.css">
+  </head>
+  <body>
+     <div id='container'>
+        <form>
+            <h1>Tip & Dip✌️</h1>
+            <hr>
+
+            <!-- Bill Section -->
+            <div>
+              <label for='cost'>Dining amount</label>
+            </div>
+            $ <input name='cost' id='cost' type='number' placeholder='amount' required>
+            <!-- Service Section-->
+            <div class='top-space'>
+              <label for='service'>How was the service</label>
+            </div>
+            <input name='service' id='service' type='number' placeholder='rate 1-10' required>
+            <div class='top-space'>
+              <button type='button'>LET'S CALCULATE...</button>
+            </div>
+            
+            <hr>
+            <h2>Bill Total: $<span id='amount'>0</span></h2>
+            <h4>Tip: $<span id='tip'>0</span></h4>
+            <h3>Split Bill: $<span id='each'>0</span> each</h5>
+            <button type='button' id='clear-form'>reset</button>
+    
+        </form>    
+     </div> 
+    <script src="tip-calc.js"></script>
+  </body>
+</html>
