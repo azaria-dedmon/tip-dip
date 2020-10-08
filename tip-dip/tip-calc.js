@@ -50,7 +50,9 @@ resetBtn.addEventListener('click', function() {
 })
 
 
-function ifElseStatements() {
+
+
+const ifElseStatements = () => {
     
     if(dinTotal.value < 50 && dinService.value < 5)  {
         tipTotal = Math.round(Number(dinTotal.value) * 0.1)
@@ -72,13 +74,13 @@ function ifElseStatements() {
     }
 }
 
-function amountOfTip() {
+const amountOfTip = () => {
     tip.textContent = tipTotal
     hfour.style.color = 'black';
     hfive.style.color = 'black';
 }
 
-function reset() {
+const reset = () => {
     dinTotal.value = 0;
     dinService.value = 0;
     amount.textContent = 0;
